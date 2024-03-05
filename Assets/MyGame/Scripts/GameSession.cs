@@ -1,8 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+using TMPro;
+using UnityEngine.PlayerLoop;
+using TMPro;
 
-public class GameSession{
+public class GameSession : MonoBehaviour
+{
 
     //config parameters
     [Range(0.1f, 10f)] public float gameSpeed = 1f;

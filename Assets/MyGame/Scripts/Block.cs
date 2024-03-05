@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Block : MonoBehaviour {
+public class Block : MonoBehaviour
+{
 
     //constants
     private const string BREAKABLE = "Breakable";
@@ -66,7 +67,7 @@ public class Block : MonoBehaviour {
         int spriteIndex = timesHit - 1;
         if(hitSprites[spriteIndex] != null)
         {
-            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex]
+            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
         }
         else
         {

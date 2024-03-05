@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-
-
-public class Ball : MonoBehaviour {
+﻿using UnityEngine;
+using UnityEngine.Audio;
+public class Ball : MonoBehaviour
+{
 
     // config parameters
     public Paddle paddle1;
@@ -11,7 +9,7 @@ public class Ball : MonoBehaviour {
     public float yPush = 15f;
     public AudioClip[] ballSounds;
     public float randomFactor = 0.2f;
-   
+
     //state
     Vector2 paddleToBallVector;
     private bool hasStarted = false;
@@ -21,15 +19,15 @@ public class Ball : MonoBehaviour {
     Rigidbody2D myRigidBody2D;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         paddleToBallVector = transform.position - paddle1.transform.position;
         myAudioSource = GetComponent<AudioSource>();
         myRigidBody2D = GetComponent<Rigidbody2D>();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         if (!hasStarted)
         {
@@ -65,6 +63,6 @@ public class Ball : MonoBehaviour {
             myAudioSource.PlayOneShot(clip);
             myRigidBody2D.velocity += velocityTweak;
         }
-        
+
     }
 }

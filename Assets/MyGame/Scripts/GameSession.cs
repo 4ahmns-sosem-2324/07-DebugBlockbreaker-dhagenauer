@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using TMPro;
 using UnityEngine.PlayerLoop;
-using TMPro;
 
 public class GameSession : MonoBehaviour
 {

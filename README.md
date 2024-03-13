@@ -7,6 +7,7 @@ classDiagram
     MonoBehaviour <|-- Level
     MonoBehaviour <|-- SceneLoader
     MonoBehaviour <|-- Block
+ MonoBehaviour <|-- LoseCollider
 
   
 

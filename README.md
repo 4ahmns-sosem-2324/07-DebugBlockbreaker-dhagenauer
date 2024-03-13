@@ -21,14 +21,14 @@ classDiagram
     -hasStarted: bool
     -myAudioSource: AudioSource
     -myRigidBody2D: Rigidbody2D
-    -Start()
-    -Update()
+    -Start() void
+    -Update() void
   
 
-    -LaunchOnMouseClick()
+    -LaunchOnMouseClick() void
  
 
-    -LockBallToPaddle()
+    -LockBallToPaddle() void
   
 
     -OnCollisionEnter2D(Collision2D collision)
